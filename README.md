@@ -1,82 +1,72 @@
-\# AI Project Design and Development: Lab 01
+# AI Project Design and Development: Lab 01
 
+**Course:** AI Project Design and Development (AI-316)
+**University:** Air University Islamabad
+**Lab Instructor:** Farhan Zafar
+**Student:** Moaz Hassan Khan Manj (Roll No. 231168)
 
+## Description
 
-\*\*Course:\*\* AI Project Design and Development (AI-316)
+This repository contains my work for **Lab 01: Foundations of AI Engineering & Project Setup**. It covers setting up a clean, production-ready AI project from scratch.
 
-\*\*University:\*\* Air University Islamabad
+## Lab Tasks
 
-\*\*Lab Instructor:\*\* Farhan Zafar
+1. **Repository Structure:** Standard folders and a `.gitignore` for Python, Jupyter, virtual environments, and model weights.
+2. **Virtual Environment:** `aipdd_env` with NumPy, OpenCV, Matplotlib, Ultralytics, and Jupyter, with pinned versions in `requirements.txt`.
+3. **Git Workflow:** Initial commit, `feature/lab01-setup` branch, and merge into `main`.
+4. **Jupyter Setup:** Notebook using the `aipdd_env` kernel and printing package versions.
+5. **Documentation:** Project specification written in Markdown inside the notebook.
 
-\*\*Student:\*\* Moaz Hassan Khan Manj (Roll No. 231168)
+## Project Structure
 
-
-
-\## Description
-
-This repository contains my work for \*\*Lab 01: Foundations of AI Engineering \& Project Setup\*\*. It covers setting up a clean, production-ready AI project from scratch.
-
-
-
-\## Lab Tasks
-
-1\. \*\*Repository structure:\*\* standard folders and a `.gitignore` for Python, Jupyter, virtual environments, and model weights
-
-2\. \*\*Virtual environment:\*\* `aipdd\_env` with numpy, opencv-python, matplotlib, ultralytics, and jupyter, with pinned versions in `requirements.txt`
-
-3\. \*\*Git workflow:\*\* initial commit, `feature/lab01-setup` branch, and merge into `main`
-
-4\. \*\*Jupyter setup:\*\* notebook using the `aipdd\_env` kernel, printing package versions
-
-5\. \*\*Documentation:\*\* project specification written in Markdown inside the notebook
-
-
-
-\## Project Structure
-
-```
-
-aipdd\_project\_231168/
-
+```text
+aipdd_project_231168/
 ├── data/
-
 │   ├── raw/
-
 │   └── processed/
-
 ├── models/
-
 ├── notebooks/
-
 ├── src/
-
 ├── configs/
-
 ├── logs/
-
 ├── .gitignore
-
 ├── requirements.txt
-
 └── README.md
-
 ```
 
+## How to Run
 
-
-\## How to Run
+### 1. Create a Virtual Environment
 
 ```bash
-
-python -m venv aipdd\_env
-
-aipdd\_env\\Scripts\\activate
-
-pip install -r requirements.txt
-
-jupyter notebook
-
+python -m venv aipdd_env
 ```
 
-Then open the notebook in the `notebooks/` folder.
+### 2. Activate the Virtual Environment
+
+**Windows PowerShell:**
+
+```powershell
+.\aipdd_env\Scripts\Activate.ps1
+```
+
+**Windows CMD:**
+
+```cmd
+aipdd_env\Scripts\activate
+```
+
+### 3. Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Start Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Then open the notebook from the `notebooks/` folder.
 
